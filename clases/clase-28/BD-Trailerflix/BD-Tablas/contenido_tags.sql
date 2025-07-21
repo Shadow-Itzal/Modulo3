@@ -329,3 +329,22 @@ ORDER BY
     contenidos.contenidoID, tags.tag;
 
 -------CONSULTA PARA QUE SE VEAN LOS TAGS POR UNA PELICULA
+
+SELECT 
+  contenidos.contenidoID,
+  contenidos.titulo AS Contenido,
+  GROUP_CONCAT(tags.tag ORDER BY tags.tag SEPARATOR ', ') AS Tags
+FROM 
+  Contenido_Tags
+JOIN 
+  Contenidos ON contenido_tags.contenidoID = contenidos.contenidoID
+JOIN 
+  Tags ON contenido_tags.tagID = tags.tagID
+GROUP BY 
+  contenidos.contenidoID, contenidos.titulo
+ORDER BY 
+  contenidos.contenidoID;
+
+
+------ dejar la tabla en blanco solo con columnas
+TRUNCATE TABLE Contenido_Tags;
