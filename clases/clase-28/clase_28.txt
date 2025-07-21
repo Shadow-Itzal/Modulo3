@@ -1,0 +1,98 @@
+Basándote en el modelo del archivo trailerflix.json, comienza a diseñar el modelo 
+de datos correspondiente a una plataforma de streaming, utilizando la información 
+del archivo JSON que aprovechaste en las primeras clases.
+ Analiza todas sus propiedades y diseña de este modelo, al menos 4 o 5 tablas 
+relacionales, donde luego deberás migrar los datos de este JSON.
+La pre-entrega 3 requerirá que elabores un proyecto Node.js + MySQL 
++ Documentación acorde.
+ Aprovecha el contenido visto en la clase de hoy, para comenzar a diseñar 
+parte del trabajo que deberás entregar al finalizar el curso. 
+ Aprovecha la plataforma DB Designer que te sugerimos en este encuentro, para 
+realizar un diseño efectivo de la bb.dd y sus tablas.
+ La bb.dd se llamará trailerflix y deberá tener al menos 6 tablas, como ser:
+ ● contenido
+ ● categorías
+ ● géneros
+ ● actores
+ Más las tabla intermedias que conectan algunas de estas tablas con las otras
+ Una vez que tengas el diseño bocetado en una hoja, vuélcalo en DB Designer y genera el archivo de exportación para generar las tablas y sus relaciones en MySQL.
+ Aprovecha luego alguna I.A. de las sugeridas. Compártele un objeto JSON del archivo traileflix, agrega la información de las tablas SQL que tienes, y que te sugiera cómo 
+separar el contenido de este archivo para insertar el mismo más rápidamente en MySQL.
+Aprovecha a adelantar estos pasos con tiempo, porque debes tener 
+esto concluido para luego continuar con el resto del trabajo final:
+ ● crear los endpoints necesarios para consultar esta información
+ ● realizar la documentación para saber qué cómo utilizar los endpoint
+
+-------------------------------
+
+Claro, te explico paso a paso y en forma sencilla qué te están pidiendo hacer:
+
+🧠 ¿Qué quiere que hagas?
+Diseñar una base de datos relacional (con MySQL) para una plataforma de streaming llamada Trailerflix, basándote en un archivo JSON que ya usaste antes (trailerflix.json).
+
+✅ PASOS SIMPLIFICADOS:
+1. Leer y analizar el JSON (trailerflix.json)
+Fijate qué información contiene: por ejemplo, películas, series, actores, géneros, etc.
+
+Observá qué propiedades tiene cada objeto (por ejemplo: título, año, género, actores, descripción, etc.)
+
+2. Diseñar un modelo de datos relacional
+A partir del JSON, pensá cómo lo dividirías en tablas relacionadas.
+
+Te piden que crees al menos 6 tablas, incluyendo estas:
+
+contenido: donde vas a tener series o películas.
+
+categorías: por ejemplo, "Película", "Serie", "Documental".
+
+géneros: como "Drama", "Acción", "Terror".
+
+actores: con nombre, apellido, etc.
+
+tablas intermedias para manejar relaciones muchos a muchos (por ejemplo: una tabla contenido_actores porque una peli tiene muchos actores, y un actor participa en varias pelis).
+
+✅ Ejemplo de tablas extra que podés agregar:
+
+contenido_generos (relaciona contenido con varios géneros)
+
+contenido_categorias (si un contenido puede tener más de una categoría, aunque si es solo una, va en la tabla contenido directamente)
+
+3. Bocetar el diseño en papel o borrador
+Hacelo primero en una hoja: dibujá las tablas, campos y relaciones (como si fuera un DER).
+
+Asegurate de tener claves primarias y foráneas donde corresponda.
+
+4. Pasarlo a DB Designer
+Usá https://dbdesigner.page/ o alguna herramienta similar.
+
+Volcá tu diseño ahí: creá las tablas, relaciones y campos.
+
+5. Exportar el diseño
+DB Designer te permite exportar el SQL (para luego crear las tablas directamente en MySQL).
+
+Guardá ese archivo: lo vas a necesitar en la próxima etapa.
+
+6. Migrar el JSON a tu base de datos
+Usá una IA (como ChatGPT 😉) para que te ayude a:
+
+Leer el JSON.
+
+Dividir sus datos en partes correspondientes a tus tablas.
+
+Generar los INSERTs de SQL.
+
+Esto te va a ahorrar tiempo al cargar datos reales en tu base.
+
+7. Prepararte para lo que viene
+Lo que estás haciendo ahora es el modelo de datos. Después vas a tener que:
+
+Crear una app en Node.js.
+
+Conectarla con tu base de datos MySQL.
+
+Crear endpoints (por ejemplo: /peliculas, /actores, etc.)
+
+Documentar cómo se usa esa API (por ejemplo con Postman o Swagger).
+
+🎯 RESUMEN CORTO:
+Tomá el JSON, analizá su estructura, pensá cómo convertirlo en una base de datos con tablas conectadas (contenido, géneros, actores, etc.), diseñá eso en DB Designer, exportá el modelo, y prepará los datos para volcarlos en MySQL. Todo esto será la base de tu entrega final con Node.js.
