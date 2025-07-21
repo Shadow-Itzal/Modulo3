@@ -9,157 +9,188 @@ CREATE TABLE Contenido_Tags (
 );
 
 -- INSERTA DATOS
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 8);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 8);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 9);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 19);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (1, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (1, 18);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (2, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (2, 13);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (2, 9);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (1, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (1, 18);
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 1);
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 6);
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 9);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 19);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (6, 9);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (6, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (6, 13);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (7, 5);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (7, 20);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (8, 3);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (8, 17);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (8, 1);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (9, 3);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (9, 8);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (9, 6);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (10, 17);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (10, 8);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (10, 1);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (11, 4);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (11, 8);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (11, 9);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (12, 4);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (12, 7);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (12, 6);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (13, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (13, 7);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (13, 23);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (14, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (14, 17);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (14, 20);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (15, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (15, 18);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (16, 23);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (16, 17);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (16, 6);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (17, 9);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (17, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (17, 21);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (18, 1);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (18, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (18, 20);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (19, 1);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (19, 9);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (19, 4);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (20, 1);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (20, 17);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (20, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 17);
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 17); -- es la 22 - 3022 - en la completa, no puso pelicula 21
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 10);
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 22); -- es 23 - IT
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 10);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (23, 22);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (23, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 8);
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (23, 1); -- es 24 - pantera negra
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (23, 3);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (23, 8);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (24, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (24, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (24, 8);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (25, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (25, 11);
+
+
+
+
+
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (25, 1);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (25, 3);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (25, 8);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (26, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (26, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (26, 12);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (27, 22);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (27, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (27, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (27, 10);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (28, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (28, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (26, 11);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (26, 3);
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (27, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (27, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (27, 12);
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (28, 22);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (28, 1);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (28, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (28, 10);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (29, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (29, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (29, 3);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (29, 20);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (30, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (30, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (30, 1);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (30, 3);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (31, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (31, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (31, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (31, 3);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (32, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (32, 17);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (32, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (32, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (32, 9);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (33, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (33, 22);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (33, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (33, 3);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (33, 9);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (34, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (34, 18);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (35, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (35, 8);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (35, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (36, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (36, 11);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (36, 21);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (37, 21);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (34, 22);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (34, 9);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (35, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (35, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (36, 1);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (36, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (36, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (37, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (37, 11);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (37, 4);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (38, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (38, 11);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (37, 21);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (38, 21);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (39, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (39, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (38, 11);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (38, 4);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (39, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (40, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (40, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (39, 11);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (39, 21);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (40, 1);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (40, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (41, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (41, 3);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (40, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (41, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (41, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (41, 8);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (42, 7);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (42, 4);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (41, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (42, 1);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (42, 3);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (42, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (42, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (43, 7);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (43, 4);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (43, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (43, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (43, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (44, 13);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (44, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (44, 7);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (45, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (44, 3);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (44, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (44, 1);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (45, 13);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (45, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (45, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (49, 22);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (49, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (49, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (45, 7);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (46, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (46, 20);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (46, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (46, 11);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (46, 18);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (47, 22);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (47, 20);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (47, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (47, 11);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (47, 18);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (48, 22);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (48, 20);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (48, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (50, 4);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (50, 7);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (51, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (49, 22);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (49, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (49, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (50, 22);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (50, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (50, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (51, 4);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (51, 7);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (52, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (52, 16);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (52, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (52, 7);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (53, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (53, 11);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (53, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (53, 16);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (53, 18);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (54, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (54, 11);
@@ -167,83 +198,91 @@ INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (54, 20);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (54, 18);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (55, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (55, 11);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (55, 16);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (55, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (55, 20);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (56, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (56, 11);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (56, 16);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (56, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (57, 13);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (57, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (56, 18);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (57, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (57, 16);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (57, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (58, 13);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (58, 20);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (58, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (58, 18);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (59, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (59, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (59, 13);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (58, 16);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (59, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (59, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (59, 18);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (60, 17);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (60, 3);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (60, 13);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (61, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (61, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (61, 22);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (62, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (62, 16);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (62, 11);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (62, 18);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (63, 4);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (64, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (64, 8);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (64, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (64, 13);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (65, 1);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (61, 3);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (61, 13);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (62, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (62, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (62, 22);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (63, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (63, 16);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (63, 11);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (63, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (64, 4);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (65, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (65, 8);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (65, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (65, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (66, 13);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (65, 13);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (66, 1);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (66, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (66, 5);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (66, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (67, 13);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (67, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (67, 15);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (67, 18);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (67, 11);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (67, 5);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (67, 20);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (68, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (68, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (68, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (68, 15);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (68, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (68, 11);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (69, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (69, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (69, 5);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (69, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (69, 8);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (70, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (70, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (70, 16);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (70, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (70, 5);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (71, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (71, 1);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (71, 17);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (71, 16);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (72, 6);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (72, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (72, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (72, 4);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (73, 4);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (73, 9);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (72, 16);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (73, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (73, 1);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (73, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (73, 8);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 4);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 9);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (73, 4);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (74, 4);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (74, 9);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (74, 3);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (74, 8);
+
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 4);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 9);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 3);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 8);
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (75, 4);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (75, 9);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (75, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (75, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (75, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (75, 5);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (75, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (76, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (75, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (76, 3);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (76, 1);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (76, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (76, 5);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (76, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (76, 11);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (77, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (77, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (77, 11);
+
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (78, 3);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (78, 17);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (78, 4);
@@ -341,7 +380,7 @@ JOIN
 JOIN 
   Tags ON contenido_tags.tagID = tags.tagID
 GROUP BY 
-  contenidos.contenidoID, contenidos.titulo
+  contenidos.contenidoID, contenidos.titulo 
 ORDER BY 
   contenidos.contenidoID;
 
