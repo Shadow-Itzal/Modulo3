@@ -1,8 +1,3 @@
--- CREAR Tabla Actores
-/* CREATE TABLE Actores (
-    actorID INT AUTO_INCREMENT PRIMARY KEY,
-    nombreCompleto VARCHAR(100) NOT NULL
-);
 
 DROP TABLE IF EXISTS actores; -- elimino actores anterior */
 

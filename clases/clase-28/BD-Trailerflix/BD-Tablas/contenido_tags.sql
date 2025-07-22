@@ -9,95 +9,108 @@ CREATE TABLE Contenido_Tags (
 );
 
 -- INSERTA DATOS
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (1, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (1, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (1, 7); -- 1 - The crown (Drama, suceso real)
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (1, 19);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (2, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (2, 13);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (2, 9);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (2, 7);  -- 2 - Riverdale (Drama, misterio, ficcion)
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (2, 14);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (2, 10);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 18);  -- 3 - The mandalorian (sci-fi, fantasia, accion)
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 9);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (3, 1);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 8);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 18); -- 4 - The umbrella... (sci-fi, fantasia, drama)
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 9);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (4, 7);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 9);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 19);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 7); -- 5 - Gambito de dama
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 10);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (5, 20);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (6, 9);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (6, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (6, 13);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (6, 10); -- 6 - Enola Holmes
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (6, 7);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (6, 14);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (7, 5);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (7, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (7, 6);  -- 7 - guason
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (7, 21);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (8, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (8, 17);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (8, 2);  -- 8 - Avengers
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (8, 18);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (8, 1);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (9, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (9, 8);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (9, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (9, 3);  -- 9 - Juego de tronos
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (9, 9);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (9, 7);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (10, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (10, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (10, 18);  -- 10 - the flash
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (10, 9);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (10, 1);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (11, 4);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (11, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (11, 5);  -- 11 - The big bang theory
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (11, 9);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (11, 10);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (12, 4);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (12, 5);  -- 12 - friends
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (12, 8);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (12, 7);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (12, 6);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (13, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (13, 7);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (13, 23);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (13, 7);  -- 13 - Anne with
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (13, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (13, 24);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (14, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (14, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (14, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (14, 7);  -- 14 - Expedientes X
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (14, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (14, 21);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (15, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (15, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (15, 7);  -- 15 - chernobyl
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (15, 19);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (16, 23);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (16, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (16, 6);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (16, 24);  -- 16 - westworld
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (16, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (16, 7);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (17, 9);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (17, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (17, 21);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (17, 10);  -- 17 - Halt and cath fire
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (17, 7);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (17, 22);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (18, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (18, 6);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (18, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (18, 1);  -- 18 - Ava
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (18, 7);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (18, 21);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (19, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (19, 9);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (19, 1);  -- 19 - Aves de presa...
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (19, 10);
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (19, 4);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (20, 1);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (20, 17);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (20, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (20, 1);  -- 20 - Archivo
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (20, 18);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (20, 21);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 17); -- es la 22 - 3022 - en la completa, no puso pelicula 21
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 10);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 18); -- 22 - 3022 - en la completa, no puso pelicula 21
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 21);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (21, 11);
 
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 22); -- es 23 - IT
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 20);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 23); -- es 23 - IT cap 2
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 21);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (22, 9);
 
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (23, 1); -- es 24 - pantera negra
 INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (23, 3);
-INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (23, 8);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (23, 9);
 
+
+
+
+
+
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (24, 6); -- 25 - Contra lo imposible
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (24, 11);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (24, 3);
+
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (25, 6); -- 26 - centigrados
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (25, 20);
+INSERT INTO Contenido_Tags (contenidoID, tagID) VALUES (25, 12);
 
 
 

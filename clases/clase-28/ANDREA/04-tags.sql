@@ -1,6 +1,3 @@
--- se borra porque creer mal antes
-DROP TABLE IF EXISTS tags;
-
 -- CREAR Tabla Tags
 CREATE TABLE Tags (
     tagID INT AUTO_INCREMENT PRIMARY KEY,
@@ -34,4 +31,3 @@ INSERT INTO Tags (tag) VALUES
 ('tecnología'),  -- 22
 ('terror'),  -- 23
 ('western');  -- 24
-
