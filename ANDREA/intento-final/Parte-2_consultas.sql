@@ -1,4 +1,4 @@
--- Parte 2: Consultas SQL
+-- Parte 2: Consultas SQL  (YO LO HICE PARA WORKBENCH y creo hay que hacerlo para el otro formato 😢
 
 -- Deberán desarrollar y ejecutar las siguientes consultas SQL:
 
