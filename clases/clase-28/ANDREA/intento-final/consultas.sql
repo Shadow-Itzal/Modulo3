@@ -258,14 +258,14 @@ SELECT
     Cantidad_Actores
 FROM (
     SELECT 
-        c.titulo AS Contenido,
-        COUNT(ca.actorID) AS Cantidad_Actores
+        contenidos.titulo AS Contenido,
+        COUNT(contenido_actores.actorID) AS Cantidad_Actores
     FROM 
-        contenidos c
+        contenidos
     JOIN 
-        contenido_actores ca ON c.contenidoID = ca.contenidoID
+        contenido_actores ON contenidos.contenidoID = contenido_actores.contenidoID
     GROUP BY 
-        c.contenidoID, c.titulo
+        contenidos.contenidoID, contenidos.titulo
     ORDER BY 
         Cantidad_Actores DESC
     LIMIT 1
@@ -279,19 +279,18 @@ SELECT
     Cantidad_Actores
 FROM (
     SELECT 
-        c.titulo AS Contenido,
-        COUNT(ca.actorID) AS Cantidad_Actores
+        contenidos.titulo AS Contenido,
+        COUNT(contenido_actores.actorID) AS Cantidad_Actores
     FROM 
-        contenidos c
+        contenidos
     JOIN 
-        contenido_actores ca ON c.contenidoID = ca.contenidoID
+        contenido_actores ON contenidos.contenidoID = contenido_actores.contenidoID
     GROUP BY 
-        c.contenidoID, c.titulo
+        contenidos.contenidoID, contenidos.titulo
     ORDER BY 
         Cantidad_Actores ASC
     LIMIT 1
 ) AS menos_actores;
-
 
 
 -----------------------------------------------------------------------------------
@@ -300,7 +299,7 @@ FROM (
 
  -- muestra 72
 
- SELECT 
+SELECT 
     COUNT(*) AS Total_Películas
 FROM 
     contenidos
@@ -331,21 +330,195 @@ WHERE
 
 -- 12. Listar las series en orden **descendente por cantidad de temporadas**.
 
--- muestra: 
+-- muestra: The Big Bang Theory    12
 
+SELECT 
+    contenidos.titulo AS Serie,
+    contenidos.temporadas AS Temporadas
+FROM 
+    contenidos
+JOIN 
+    categorias ON contenidos.categoriaID = categorias.categoriaID
+WHERE 
+    categorias.categoria = 'Serie'
+ORDER BY 
+    contenidos.temporadas DESC;
 
 ---------------------------------------------------------------------------------------
 
--- 13. Agregar el campo `fecha_lanzamiento` (tipo `DATE`) a la tabla de trabajos fílmicos y actualizar las fechas de los títulos del género **"Aventura"**.
+-- 13. Agregar el campo `fecha_lanzamiento` (tipo `DATE`) a la tabla de trabajos fílmicos (contenidos) y actualizar las fechas de los títulos del género **"Aventura"**.
 
+-- agregamos nueva columna
+ALTER TABLE contenidos
+ADD COLUMN fecha_lanzamiento DATE;
+
+-- verificamos genero "aventura", muestra que son 8
+SELECT 
+    contenidoID, titulo
+FROM 
+    contenidos
+JOIN 
+    generos ON contenidos.generoID = generos.generoID
+WHERE 
+    generos.genero = 'Aventura';
+
+
+/* No se porque me aparece este orden cuando quiero buscar las peliculas por genero: 
+1 = Ciencia ficcion ,
+2 = Drama, 
+3 = Suceso real, 
+4 = suspenso, 
+5 = comedia, 
+6 = Familia, 
+7 = Terror, 
+8 = Aventura, 
+9 = Accion, 
+10 = Fantasia. */
+
+--------------------------------------------------------------------------------------------------------
 
 -- 14. Buscar películas por **palabra clave** en título o descripción (por ejemplo: **"Aventura"**, **"madre"**, **"Ambientada"**).
 
+-- version corta:
+
+SELECT 
+    contenidoID,
+    titulo AS Título,
+    resumen AS Descripción
+FROM 
+    contenidos
+WHERE 
+    titulo LIKE '%Aventura%'
+    OR resumen LIKE '%Aventura%';
+
+/* se cambia la parte del WHERE por: WHERE titulo LIKE '%madre%' OR resumen LIKE '%madre%'; o por: WHERE titulo LIKE '%Ambientada%' OR resumen LIKE '%Ambientada%';*/
+
+-------------------------
+-- Version larga, en donde aparece alguna de las 3 opciones de palabra
+
+SELECT 
+    contenidoID,
+    titulo AS Título,
+    resumen AS Descripción
+FROM 
+    contenidos
+WHERE 
+    titulo     LIKE '%Aventura%' OR resumen LIKE '%Aventura%'
+    OR titulo  LIKE '%madre%'    OR resumen LIKE '%madre%'
+    OR titulo  LIKE '%Ambientada%' OR resumen LIKE '%Ambientada%';
+
+-------------------------------------------------------------------------------------------------------
 
 -- 15. Agregar una tabla **"Ranking"** con:  
     -- ID de película/serie, calificación y comentarios.  
     -- Realizar consultas utilizando **JOINS**, **UNION**, **CONCAT**, **COUNT**, **GROUP BY**, entre otras operaciones SQL.
 
+-- crear la tabla Ranking:
+DROP TABLE IF EXISTS Ranking;
+
+CREATE TABLE Ranking (
+    rankingID INT AUTO_INCREMENT PRIMARY KEY,
+    contenidoID INT NOT NULL,
+    calificacion INT CHECK (calificacion BETWEEN 1 AND 10), /* solo acepta enteros y tiene una restricción de validación (check constraint) que obliga a que los valores insertados estén entre 1 y 10, inclusive. */
+    comentario TEXT,
+    FOREIGN KEY (contenidoID) REFERENCES contenidos(contenidoID)
+);
+
+-- insertar ejemplos
+INSERT INTO Ranking (contenidoID, calificacion, comentario) VALUES
+(1, 9, 'Una serie magnífica sobre la realeza.'),
+(2, 8, 'Drama juvenil con mucho misterio.'),
+(3, 10, 'Una obra maestra del universo Star Wars.'),
+(4, 7, 'Buena, pero algunas partes son lentas.'),
+(5, 9, 'Muy interesante y bien actuada.'),
+(6, 8, 'Divertida y bien hecha.'),
+(7, 10, 'Oscura y poderosa.'),
+(8, 9, 'Gran cierre para una saga épica.');
+
+-- -- CONSULTAS AVANZADAS  --  --
+
+-- a) Ver ranking promedio por película/serie
+SELECT 
+    contenidos.titulo AS Título,
+    ROUND(AVG(ranking.calificacion), 2) AS Promedio,
+    COUNT(ranking.rankingID) AS Total_Votos
+FROM 
+    contenidos
+JOIN 
+    Ranking ON contenidos.contenidoID = ranking.contenidoID
+GROUP BY 
+    contenidos.contenidoID, contenidos.titulo
+ORDER BY 
+    Promedio DESC;
+
+
+/* explicacion: AVG(ranking.calificacion) → Calcula el promedio de todas las calificaciones que tiene un contenido.
+
+                ROUND(..., 2) → Redondea ese promedio a 2 decimales. Por ejemplo, 7.6666 → 7.67 */
+
+
+-- b) Ver todos los comentarios de usuarios unidos en una sola fila por contenido
+
+SELECT 
+    contenidos.titulo AS Título,
+    GROUP_CONCAT(ranking.comentario SEPARATOR ' || ') AS Comentarios
+FROM 
+    contenidos
+JOIN 
+    Ranking ON contenidos.contenidoID = ranking.contenidoID
+GROUP BY 
+    contenidos.contenidoID, contenidos.titulo;
+
+-- c) Ver las películas/series con calificación 10
+SELECT 
+    contenidos.titulo AS Título,
+    ranking.calificacion,
+    ranking.comentario
+FROM 
+    Ranking
+JOIN 
+    contenidos ON ranking.contenidoID = contenidos.contenidoID
+WHERE 
+    ranking.calificacion = 10;
+
+
+-- d) Usar UNION para mostrar contenidos sin ranking
+-- Contenidos con ranking
+-- Contenidos con ranking
+SELECT 
+    contenidos.titulo AS Título,
+    'Con Ranking' AS Estado
+FROM 
+    contenidos 
+JOIN 
+    Ranking ON contenidos.contenidoID = ranking.contenidoID
+GROUP BY 
+    contenidos.contenidoID
+
+UNION
+
+-- Contenidos sin ranking
+SELECT 
+    contenidos.titulo AS Título,
+    'Sin Ranking' AS Estado
+FROM 
+    contenidos
+WHERE 
+    contenidos.contenidoID NOT IN (SELECT contenidoID FROM Ranking);
+
+
+-- e) CONCAT para mostrar frase combinada
+SELECT 
+    CONCAT(contenidos.titulo, ': tiene una calificación promedio de ', ROUND(AVG(ranking.calificacion), 1)) AS Resumen
+FROM 
+    contenidos
+JOIN 
+    Ranking ON contenidos.contenidoID = ranking.contenidoID
+GROUP BY 
+    contenidos.contenidoID, contenidos.titulo;
+
+
+...........................................
 
 
 
@@ -355,20 +528,7 @@ WHERE
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ---- ARREGLA QUE DURACION , TENGRA LINK DE TRAILERS, Y QUE TRAILERS TENGA DURACION
+    ---- ARREGLA QUE DURACION , no TENGA LINK DE TRAILERS, Y QUE TRAILERS no TENGA DURACION, no se si funciona
     -- 1. Agregar columna temporal
 ALTER TABLE contenidos ADD COLUMN temp VARCHAR(255);
 
