@@ -7,8 +7,8 @@ CREATE TABLE Contenidos (
     generoID INT,
     resumen TEXT,
     temporadas INT,
-    duracion VARCHAR(50),
     trailer VARCHAR(255),
+    duracion VARCHAR(50),
     FOREIGN KEY (categoriaID) REFERENCES Categorias(categoriaID),
     FOREIGN KEY (generoID) REFERENCES Generos(generoID)
 );
@@ -16,7 +16,7 @@ CREATE TABLE Contenidos (
 
 -- INSERTAR Tabla Contenidos
 
-INSERT INTO `contenidos`( `poster`, `titulo`, `categoriaID`, `generoID`, `resumen`, `temporadas`, `duracion`, `trailer`) VALUES /* en original dice: INSERT INTO `Trailers`( `poster`, `titulo`, `categoria_id`, `genero_id`, `resumen`, `temporadas`, `duracion`, `trailer`) VALUES */
+INSERT INTO `contenidos`( `poster`, `titulo`, `categoriaID`, `generoID`, `resumen`, `temporadas`, `trailer`, `duracion`) VALUES /* en original dice: INSERT INTO `Trailers`( `poster`, `titulo`, `categoria_id`, `genero_id`, `resumen`, `temporadas`, `duracion`, `trailer`) VALUES */
 ("./posters/1.jpg","The Crown","2","3","Este drama narra las rivalidades políticas y el romance de la reina Isabel II, así como los sucesos que moldearon la segunda mitad del siglo XX.","4","https://www.youtube.com/embed/JWtnJjn6ng0",NULL),
 ("./posters/2.jpg","Riverdale","2","2","El paso a la edad adulta incluye sexo, romance, escuela y familia. Para Archie y sus amigos, también hay misterios oscuros.","5","https://www.youtube.com/embed/HxtLlByaYTc",NULL),
 ("./posters/3.jpg","The Mandalorian","2","1","Ambientada tras la caída del Imperio y antes de la aparición de la Primera Orden, la Serie sigue los pasos de un pistolero solitario en las aventuras que protagoniza en los confines de la galaxia, donde no alcanza la autoridad de la Nueva República.","2","https://www.youtube.com/embed/aOC8E8z_ifw",NULL),
